@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html><head>
+<!<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Blood</title>
+
+	<link href="css/regitation.css" rel="stylesheet">
+
+<body class="">
+
+<div class="">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-8 col-xs-12 col-lg-offset-2">
+				 <div class="logo-wrap">
+				 	<a class="logo" href="http://in.blood.is/"></a>
+
+				 </div>
+					<center>
+					
+				 <a class="linking" href="http://in.blood.is/requests/new" id="new-request-btn">New Request</a>
+                 <!-- , ["ಕನ್ನಡ", "/languages/kn"],["தமிழ்", "/languages/tn"] -->
+				 </center>
+                
+				<div>
+
+                <div style = "text-align:right" >
+                <ul class="menubar" id="menu">
+				
+                    <li><a href="http://in.blood.is/why_donate"> Why donate ?</a></li>
+                    <li><a href="http://in.blood.is/about">About</a></li>
+                    <li><a href="http://in.blood.is/contact">Contact</a></li>
+					<div>
+                </ul>
+				 <div>
+				 <div class="user">
+
+
+
+				 </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--
+<p class="notice"></p>
+<p class="alert"></p>
+-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+
+			<!-- <h1>New request</h1> -->
+
+			<form accept-charset="UTF-8" action="/requests" class="new_request" id="new_request" method="post">
+			<div style="display:none"><input name="utf8" value="✓" type="hidden">
+			<input name="authenticity_token" value="57epZp1V5rQ2aeGG2NoM/B0kfauWfcVhWJkuGIWZI/8=" type="hidden">
+			</div>
+
+
+
+<div style = "text-align: center;">
+
+
+<div class="maindiv">
+
+<div class="form_div ">
+<div>
+<h2 >details</h2>
+<p align = left >
+    <label >Patient name</label>
+	</p>
+	<br>
+    <input class="input" id="request_name" name="request[name]" type="text">
+	</br>
+</div>
+
+<div class="row">
+    <div class="col-lg-4">
+        <div >
+            <label for="request_Age">Age</label>
+			<br>
+            <input class="input" id="request_age" name="request[age]" type="text">
+			</br>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div >
+            <label for="request_Sex">Sex</label>
+			<br>
+            <select class="input" id="request_sex" name="request[sex]"><option selected="selected" value="">Choose...</option>
+            <br>
+			<option value="Male">male</option>
+<option value="Female">female</option></select>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="form-group">
+            <label for="request_Relation">Relation</label>
+			<br>
+            <select class="input" id="request_relation" name="request[relation]"><option selected="selected" value="">Choose...</option>
+			</br>
+			
+<option value="Myself">Myself</option>
+<option value="Mother">Mother</option>
+<option value="Father">Father</option>
+<option value="Brother">Brother</option>
+<option value="Sister">Sister</option>
+<option value="Son">Son</option>
+<option value="Daughter">Daughter</option>
+<option value="Uncle">Uncle</option>
+<option value="Aunt">Aunt</option>
+<option value="Niece">Niece</option>
+<option value="Nephew">Nephew</option>
+<option value="Grand Father">Grand Father</option>
+<option value="Grand Mother">Grand Mother</option>
+<option value="Grand Son">Grand Son</option>
+<option value="Grand Daughter">Grand Daughter</option>
+<option value="Friend">Friend</option>
+<option value="Husband">Husband</option>
+<option value="Wife">Wife</option></select>
+        </div>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="request_Blood type">Blood type</label>
+	<br>
+    <select class="input" id="request_bloodtype" name="request[bloodtype]"><option selected="selected" value="">Choose a blood type</option>
+	</br>
+<option value="Any">Any</option>
+<option value="A+">A+</option>
+<option value="A-">A-</option>
+<option value="B+">B+</option>
+<option value="B-">B-</option>
+<option value="AB+">AB+</option>
+<option value="AB-">AB-</option>
+<option value="O+">O+</option>
+<option value="O-">O-</option></select>
+</div>
+
+<div class="form-group">
+    <label for="request_Units">Units</label>
+	<br>
+    <select class="input" id="request_units" name="request[units]"><option selected="selected" value="">Choose number of units</option>
+	</br>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option></select>
+</div>
+
+<div>
+    <label >Reason</label>
+	<br>
+    <select class="input" id="request_reason" name="request[reason]"><option selected="selected" value="">Choose a reason</option>
+	</br>
+<option value="surgery">surgery</option>
+<option value="accident">accident</option>
+<option value="pregnancy">pregnancy</option></select>
+</div>
+
+<h2 >location</h2>
+
+<div class="form-group">
+    <label for="request_Area">Area</label>
+	<br>
+    <input class="input" id="request_area" name="request[area]" value="Bangalore" type="text">
+	</br>
+</div>
+
+<div class="form-group">
+    <label for="request_City">City</label>
+	<br>
+    <input class="input" id="request_city" name="request[city]" value="Bangalore" type="text">
+	</br>
+</div>
+
+<div class="form-group">
+    <label for="request_Hospital">Hospital</label>
+	<br>
+    <input autocomplete="off" class="input" id="request_hospital" name="request[hospital]" placeholder="Enter hospital name" type="text">
+	</br>
+</div>
+
+<div class="details">
+    <input class="input" data_geo="lat" id="request_lat" name="request[lat]" value="" type="hidden">
+    <input class="input" data_geo="lng" id="request_lng" name="request[lng]" value="" type="hidden">
+</div>
+
+<div class="form-group">
+    <label for="request_timeframe">By when do you need it?</label>
+	<br>
+    <input class="input" id="request_timeframe" name="request[timeframe]" placeholder="dd-mm-yyyy" type="text">
+	</br>
+</div>
+
+<!-- <div class="checkbox">
+<label>
+<input name="request[recurring]" type="hidden" value="0" /><input id="recurring" name="request[recurring]" type="checkbox" value="1" /> This is a recurring requirement
+</label>
+</div>
+<div style="display:none"  id="frequency" class="form-group">
+<label for="request_frequency">Frequency</label>
+<input class="form-control" id="request_frequency" name="request[frequency]" type="text" />
+</div> -->
+
+<h2 class="form-subtitle">contact</h2>
+
+<div class="hidden_div" style="display:none">
+    <div class="form-group">
+        <label for="request_Your_name"> >Your name</label>
+		<br>
+        <input class="input" id="request_requester_name" name="request[requester_name]" type="text">
+		</br>
+    </div>
+</div>
+
+<div class="row">
+     <div class="col-lg-6">
+        <div class="form-group">
+             <label for="request_Country code">Country code</label>
+			 <br/>
+             <select class="input" id="request_country" name="request[country]"><option value="AF">Afghanistan</option>
+			 </br>
+<option value="AL">Albania</option>
+<option value="DZ">Algeria</option>
+<option value="AS">American Samoa</option>
+<option value="AD">Andorre</option>
+<option value="AO">Angola</option>
+<option value="AI">Anguilla</option>
+<option value="AQ">Antarctica</option>
+<option value="AG">Antigua and Barbuda</option>
+<option value="AR">Argentina</option>
+<option value="AM">Armenia</option>
+<option value="AW">Aruba</option>
+<option value="AU">Australia</option>
+<option value="AT">Austria</option>
+
+<option value="ZW">Zimbabwe</option>
+<option value="AX">Åland Islands</option></select>
+         </div>
+     </div>
+     <div class="col-lg-6">
+        <div class="form-group">
+             <label for="request_Phone">Phone</label> 
+				
+			 <br>
+            <input class="input" id="request_phone" name="request[phone]" type="text">
+			</br>
+        </div>
+     </div>
+</div>
+
+<div class="form-group hidden_div" style="display:none">
+    <label for="request_Your_gender">Your gender</label>
+
+    <select class="input" id="request_requester_sex" name="request[requester_sex]"><option selected="selected" value=""> Choose Your gender</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option></select>
+</div>
+
+<div class="actions">
+  <input class="submit" name="commit" value="Create Request" type="submit">
+</div>
+
+
+
+
+			<!-- <a href="/requests">Back</a> -->
+
+        </div>
+		</div>
+    </div>
+</div>
+ </div>   
+
+  <p align = center>© Copyright Socialblood 2015. All rights reserved.</p>
+</div>
+</body>
+</html>
